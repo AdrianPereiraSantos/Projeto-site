@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta autor="adrian" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <p>Soma de dois Produtos (coloque os dois produtos e pressione tab para o resultado)</p>
+      <div class="container">
+           <h1>Light / Dark</h1>
+         <div class="toogle">
+             <input id="switch" type="checkbox" name="theme">
+             <label for="switch">Toogle</label>
+         </div> 
+      </div>
+      <form method="POST" action="processa.php">
+        Produto um: <input name="produto1" id="produto1" value="8,40"><br><br>
+        Produto dois: <input name="produto2" id="produto2" value="1,25" onblur="soma()"><br><br>
+        Resultado: <input name="resultado" readonly id="resultado"><br><br>
+      </form>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
